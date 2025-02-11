@@ -255,6 +255,6 @@ mongoose.connect(MONGO_URI)
   .then(async () => {
     console.log('Connected to MongoDB');
     await seedDatabase();
-    app.listen(PORT, () => console.log(`Server running at http://localhost:${PORT}`));
+    // app.listen(PORT, () => console.log(`Server running at http://localhost:${PORT}`));
   })
   .catch(err => console.error('MongoDB connection error:', err));
